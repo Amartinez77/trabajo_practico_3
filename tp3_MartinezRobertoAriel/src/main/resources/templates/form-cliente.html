@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de ingreso de datos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form action="#" method="post">
+            
+            <div>
+        <label for="dni">DNI: </label>
+        <input type="number" id="dni" name="dni" required />
+      </div>
+
+      <div>
+        <label for="nombres">Nombres:</label>
+        <input type="text" id="nombres" name="nombres" required />
+      </div>
+
+      <div>
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="nombres" required />
+      </div>
+
+      <div>
+        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+        <input
+          type="date"
+          id="fechaNacimiento"
+          name="fechaNacimiento"
+          required
+        />
+      </div>
+
+      <div>
+        <label>Género:</label>
+        <input type="radio" id="femenino" name="genero" value="femenino" />
+        <label for="femenino">Femenino</label>
+
+        <input type="radio" id="masculino" name="genero" value="masculino" />
+        <label for="masculino">Masculino</label>
+
+        <input type="radio" id="otro" name="genero" value="otro" />
+        <label for="otro">Otro</label>
+      </div>
+
+      <div>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div>
+        <label for="domicilio">Domicilio:</label>
+        <input type="text" id="domicilio" name="domicilio" required />
+      </div>
+
+      <div>
+        <label for="provincia">Provincia:</label>
+        <select id="provincia" name="provincia" required>
+          <option value="JUJUY">Jujuy</option>
+          <option value="SALTA">Salta</option>
+          <option value="TUCUMAN">Tucuman</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="telefono">Número de teléfono celular:</label>
+        <input
+          type="tel"
+          id="telefono"
+          name="telefono"
+          pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+          placeholder="Formato: 123-4567-8901"
+        />
+      </div>
+      <div>
+        <label>Categorías de interés:</label>
+        <input type="checkbox" id="deporte" name="interes" value="deporte" />
+        <label for="deporte">Deporte</label>
+        <input type="checkbox" id="musica" name="interes" value="musica" />
+        <label for="musica">Música</label>
+        <input
+          type="checkbox"
+          id="tecnologia"
+          name="interes"
+          value="tecnologia"
+        />
+        <label for="tecnologia">Tecnología</label>
+      </div>
+      <div>
+        <label for="sugerencias">Sugerencias para la empresa:</label>
+        <textarea
+          id="sugerencias"
+          name="sugerencias"
+          rows="4"
+          cols="50"
+        ></textarea>
+      </div>
+
+      <div>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required />
+      </div>
+
+      <div>
+        <label for="aceptarCondiciones"
+          >Acepto los términos y condiciones</label
+        >
+        <input
+          type="checkbox"
+          id="aceptarCondiciones"
+          name="aceptarCondiciones"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="recibirInfo"
+          >Acepto recibir información relativa a la empresa</label
+        >
+        <input type="checkbox" id="recibirInfo" name="recibirInfo" required />
+      </div>
+      
+      <button type="submit">Enviar</button>
+            
+        </form>
+    </div>
+</body>
+</html>
