@@ -1,96 +1,139 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+<head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Programación Visual - APU</title>
-    <style>
-   
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-      }    
-    </style>
-  </head>
-  <body>
-    <nav>
-      <a href="#seccion1">Profesores</a>
-      <a href="#seccion2">Contenidos</a>
-      <a href="#seccion3">Software</a>
+    <link rel="stylesheet" href="../static/css/estilos.css">
+</head>
+<body>
+    <nav class="nav">
+        <a href="#sectionProfesores" class="enlacesNav">Inicio</a>
+        <a href="#idContenido" class="enlacesNav">Contenidos</a>
+        <a href="#sectionInstalacion" class="enlacesNav">Instalación</a>
     </nav>
 
-    <div  id="hero">
-      <img alt="../static/images/programadores-java.jpg" src="../static/images/programadores-java.jpg">
+    <div id="hero">
+        <img alt="../static/images/programadores-java.jpg" src="../static/images/programadores-java.jpg">
     </div>
 
     <section>
-      <header >
-        <h1 align="center">Programación Visual - APU</h1>
-      </header>
+        <header id="headerIndex">
+            <h1 class="tituloH1">Programación Visual - APU</h1>
+        </header>
     </section>
-	<main>
-		<section id="seccion1">
-	      <div >
-	        <h2>Seccion profesores</h2>
-	        <p>Horarios</p>
-	        <p>Ariel Vega: Viernes de 8:30 hs a 9:30 hs </p>
-			<p>Carolina Apaza: Jueves de 17:00 a 18:00 hs. </p>
-			<p>Juan Carlos Rodriguez: Miércoles  de 18:00 a 19:00 hs. </p>
-			<p>Gustavo Sosa: Jueves de 20:00 a 21:00 </p>
-	      </div>
-	    </section>
-	</main>
     
-    <hr>
-    <aside>
+    <div class="main">
+        <section class="sectionMainProfesores" id="sectionProfesores">
+            <div>
+                <h2 class="tituloH2">Horarios de la materia</h2>
+                <p>Horarios</p>
+                <p>Ariel Vega: Viernes de 8:30 hs a 9:30 hs</p>
+                <p>Carolina Apaza: Jueves de 17:00 a 18:00 hs.</p>
+                <p>Juan Carlos Rodriguez: Miércoles de 18:00 a 19:00 hs.</p>
+                <p>Gustavo Sosa: Jueves de 20:00 a 21:00</p>
+            </div>
+            
+            <br>
+            <br>
+            
+            <div>
+            	
+            	<p>Ingrese al formulario de inscripción</p>
+            	<br>
+        		<a href="form-cliente.html">click aqui!</a>
+        		<br>
+            
+            </div>
+        </section>
+        
+        <aside class="asideDescarga">
+            <div class="claseAside">
+                <p>Descargar el entorno de trabajo</p>
+                <p>En esta materia trabajamos con el IDE Spring Tools, puedes descargarlo a continuación</p> 
+                <a href="https://spring.io/tools">
+                    <img src="../static/images/spring.jpeg" alt="Logo de spring tools">
+                </a>
+            </div>
+        </aside>
+    </div>
     
-    	<p>Descargar el entorno de trabajo</p> 
-    	<a href="https://spring.io/tools">
-    		<img src="../static/images/spring.jpeg" alt="Logo de spring tools">
-    	</a>   	
-    	
-    <hr>
-    
-    </aside>
-
-    <section id="seccion2" >
-      <div >
-        <h2>Seccion contenidos</h2>
-        <p>Algunos contenidos de la materia</p>
-        <table>
-        <tr>
-        	<th>Semana</th>
-            <th>Contenido</th>
-            <th>Temas</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Instalacion STS</td>
-            <td>Instalacion del entorno de trabajo</td>
-        </tr>
-        <tr>
-			<td>2</td>            
-            <td>Profundizar en los conceptos de atributos, constructores y métodos accesores</td>
-            <td>Estructuras de control - tipos de datos String y fecha - Sobrecarga</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Arreglos</td>            
-            <td>Arreglos - interfaces - colecciones </td>
-        </tr>
-    </table>
-      </div>
+    <section class="centered-section sectionInfo" id="idContenido">
+        <h2>¿Qué es JAVA?</h2>
+        <div>
+            <p>Java es un lenguaje de programación ampliamente utilizado para codificar
+            aplicaciones web. Ha sido una opción popular entre los desarrolladores durante
+            más de dos décadas, con millones de aplicaciones Java en uso en la actualidad. 
+            Java es un lenguaje multiplataforma, orientado a objetos y centrado en la red que se puede utilizar
+            como una plataforma en sí mismo. Es un lenguaje de programación rápido, seguro y confiable para
+            codificarlo todo, desde aplicaciones móviles y software empresarial hasta aplicaciones de 
+            macrodatos y tecnologías del servidor.</p>
+        </div>
     </section>
 
-    <section id="seccion3">
-      <div >
-        <h2>Programas útiles</h2>
-        <p>descarga</p>
-      </div>
+    <section class="centered-section sectionUsos">
+        <h3>¿Para qué se utiliza el lenguaje de programación Java?</h3>
+        <div>
+            <h4>1- Desarrollo de videojuegos</h4>
+            <p>Muchos videojuegos, así como juegos para móviles y computadoras, se crean con Java. Incluso los juegos modernos que integran tecnología avanzada, como el machine learning o la realidad virtual, se crean con la tecnología de Java.</p>
+            <h4>2- Computación en la nube</h4>
+            <p>Java a menudo se conoce como WORA: escribir una vez y ejecutar en cualquier lugar (por sus siglas en inglés “Write Once and Run Anywhere”), lo que lo hace perfecto para aplicaciones descentralizadas basadas en la nube. Los proveedores de la nube eligen el lenguaje Java para ejecutar programas en una amplia gama de plataformas subyacentes.</p>
+            <h4>3- Macrodatos</h4>
+            <p>Java se usa para motores de procesamiento de datos que pueden trabajar con conjuntos de datos complejos y cantidades masivas de datos en tiempo real.</p>
+            <h4>4- Inteligencia artificial</h4>
+            <p>Java es una fuente inagotable de bibliotecas de machine learning. Su estabilidad y velocidad lo hacen perfecto para el desarrollo de aplicaciones de inteligencia artificial como el procesamiento del lenguaje natural y el aprendizaje profundo.</p>
+            <h4>5- Internet de las cosas</h4>
+            <p>Java se ha utilizado para programar sensores y hardware en dispositivos de periferia que pueden conectarse de forma independiente a Internet.</p>
+        </div>
     </section>
     
-    <footer>
-    	<h3 align="center">Programacion visual 2024</h3>
+    <section class="centered-section seccion2">
+        <div>
+            <h2 class="tituloH2">Sección contenidos</h2>
+            <p>Algunos contenidos de la materia</p>
+        </div>
+        <div class="tabla">
+            <table class="tabla">
+                <tr>
+                    <th>Semana</th>
+                    <th>Contenido</th>
+                    <th>Temas</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Instalación STS</td>
+                    <td>Instalación del entorno de trabajo</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Profundizar en los conceptos de atributos, constructores y métodos accesores</td>
+                    <td>Estructuras de control - tipos de datos String y fecha - Sobrecarga</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Arreglos</td>
+                    <td>Arreglos - interfaces - colecciones</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section class="centered-section seccion3" id="sectionInstalacion">
+        <div>
+            <h2 class="tituloH2">Comenzamos a programar!</h2>
+            <h3>Instalación de JAVA 17</h3>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/TRsCMJrKglw?si=p3UldfecNC3FMkRn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <h3>Instalación de Spring Tools Suite</h3>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/89Mr-dYcHxA?si=nmz0D9dW-4F9j2lb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <h3 class="tituloH3">Programación Visual 2024</h3>
     </footer>
-  </body>
+</body>
 </html>
